@@ -1,0 +1,130 @@
+/* RESET STYLES & HELPER CLASSES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+body {
+    margin: 0px;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+/* other styles */
+footer, header {
+    background: #000;
+    padding: 20px 30px;
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+
+main {
+    min-height: 90vh;
+    padding: 30px 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+li h2 {
+    display: inline-block;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    min-width: 100px;
+    text-align: center;
+    font-size: 0.8rem;
+    border-radius: 15px;
+    border: 1px solid;
+    cursor: pointer;
+}
+
+.header {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+h2.header {
+    margin: 15px 0px;
+}
+
+
+.node {
+    margin-left: 20px;
+}
+
+.level-0.node {
+    margin-left: 0px;
+}
+
+.container.data-section ul:first-child {
+    display: block !important;
+}
+span.show {
+    background: #000;
+    color: #fff;
+    border-radius: 80%;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.node-section {
+    position: relative;
+    display: inline-block;
+}
+
+.description {
+    position: absolute;
+    background: #4285F4;
+    color: #fff;
+    padding: 10px;
+    top: -38px;
+    transform: translate(-50%, 0px);
+    font-size: 0.7rem;
+    left: 50%;
+    width: auto;
+    min-width: 100px;
+    text-align: center;
+    display: none;
+}
+
+.description:before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    height: 0px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #4285F4;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.description.show {
+    display: block;
+}
